@@ -29,6 +29,16 @@ body {
   background-color: var(--body-color);
 }
 
+@media (max-width: 767px) {
+  body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -47,6 +57,7 @@ img {
   height: 100vh;
   margin-inline: 1.5rem;
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   place-items: center;
@@ -102,8 +113,8 @@ img {
 /* Tela mobile */
 @media (max-width: 767px) {
   .card {
-    width: 150px;
-    margin: 0.25rem;
+    width: 80%;
+    margin: 2.25rem;
   }
 }
 
@@ -155,6 +166,8 @@ img {
   transform-origin: 18px 18px;
   transition: transform 0.45s ease;
   transform: rotate(0);
+  display: flex;
+  align-items: center;
 }
 
 .card__social-toggle {
@@ -170,10 +183,10 @@ img {
 }
 
 .card__social-text {
-  display: block;
   color: var(--black-color);
   font-size: var(--smaller-font-size);
   font-weight: 500;
+  padding-left: 1rem;
 }
 
 .card__social-list {
@@ -192,7 +205,6 @@ img {
   border-radius: 50%;
 }
 
-.card__social-text,
 .card__social-list {
   position: absolute;
   top: 0;
@@ -201,9 +213,7 @@ img {
   padding-left: 3.1rem;
 }
 
-.card__social-text {
-  top: 0.5rem;
-}
+
 
 .animation .card__social-control {
   transform: rotate(-135deg);

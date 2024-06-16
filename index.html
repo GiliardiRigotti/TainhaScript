@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/wave.css">
     <style>
-        @media only screen and (max-width: 480px) {}
-
         #header .container {
             position: absolute;
             width: 34rem;
@@ -24,19 +22,17 @@
             transform: translate(-50%, -50%);
         }
 
+
         .text {
             color: #fff;
             font-size: 6rem;
             font-weight: 900;
-            display: inline-block;
-            position: absolute;
             bottom: 0;
             animation: text 2s ease-in;
             margin-right: 0.5rem;
         }
 
         .text-g {
-            left: 0;
             animation-delay: 0ms;
         }
 
@@ -182,6 +178,92 @@
                 transform: translate3d(0, 0, 0);
             }
         }
+
+        @media (max-width: 767px) {
+
+            #header .container {
+                position: absolute;
+                width: auto;
+                height: 10rem;
+                margin-top: 5%;
+                top: 0%;
+                transform: translate(-50%, -50%);
+            }
+
+            .text {
+                font-size: 1.5rem;
+            }
+
+            .text-g {
+                left: 0;
+                animation-delay: 0ms;
+            }
+
+            .text-T {
+                left: 1rem;
+                animation-delay: 150ms;
+            }
+
+            .text-a {
+                left: 3rem;
+                animation-delay: 230ms;
+            }
+
+            .text-i {
+                left: 4rem;
+                animation-delay: 310ms;
+            }
+
+            .text-n {
+                left: 6rem;
+                animation-delay: 390ms;
+            }
+
+            .text-h {
+                left: 8rem;
+                animation-delay: 470ms;
+            }
+
+            .text-a2 {
+                left: 10rem;
+                animation-delay: 550ms;
+            }
+
+            .text-S {
+                left: 12rem;
+                animation-delay: 630ms;
+            }
+
+            .text-c {
+                left: 13.8rem;
+                animation-delay: 710ms;
+            }
+
+            .text-r {
+                left: 15.5rem;
+                animation-delay: 790ms;
+            }
+
+            .text-i2 {
+                left: 16.8rem;
+                animation-delay: 870ms;
+            }
+
+            .text-p {
+                left: 17.6rem;
+                animation-delay: 950ms;
+            }
+
+            .text-t {
+                left: 19.7rem;
+                animation-delay: 1030ms;
+            }
+
+            .text-end {
+                left: 21rem;
+                animation-delay: 1110ms;
+            }
+        }
     </style>
 
 
@@ -201,20 +283,22 @@
                     <div class="wave delay"></div>
                 </div>
             </div>
-            <div class="text text-g">&gt;</div>
-            <div class="text text-T">T</div>
-            <div class="text text-a">a</div>
-            <div class="text text-i">i</div>
-            <div class="text text-n">n</div>
-            <div class="text text-h">h</div>
-            <div class="text text-a2">a</div>
-            <div class="text text-S">S</div>
-            <div class="text text-c">c</div>
-            <div class="text text-r">r</div>
-            <div class="text text-i2">i</div>
-            <div class="text text-p">p</div>
-            <div class="text text-t">t</div>
-            <div class="text text-end">/&gt;</div>
+            <div style="display: flex; flex-direction: row;">
+                <div class="text text-g">&gt;</div>
+                <div class="text text-T">T</div>
+                <div class="text text-a">a</div>
+                <div class="text text-i">i</div>
+                <div class="text text-n">n</div>
+                <div class="text text-h">h</div>
+                <div class="text text-a2">a</div>
+                <div class="text text-S">S</div>
+                <div class="text text-c">c</div>
+                <div class="text text-r">r</div>
+                <div class="text text-i2">i</div>
+                <div class="text text-p">p</div>
+                <div class="text text-t">t</div>
+                <div class="text text-end">/&gt;</div>
+            </div>
         </div>
     </div>
     <div style="margin-top: 150px;">
@@ -226,7 +310,7 @@
                 </div>
 
                 <h3 class="card__name">Murilo Sodré</h3>
-                <span class="card__profession">Mestre em políticas públicas Embaixador do Elume Park</span>
+                <span class="card__profession">Mestre em políticas públicas e Embaixador do Elume Park</span>
 
                 <div class="card__social">
                     <div class="card__social-control">
@@ -235,23 +319,25 @@
                             <i class="ri-add-line"></i>
                         </div>
 
-                        <span class="card__social-text">Confira Minhas redes</span>
+                        <span class="card__social-text">"Segue toda vida reto"</span>
 
                         <!-- Card social -->
                         <ul class="card__social-list">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-facebook-line"></i>
+                                <a href="https://www.linkedin.com/in/murilo-sodr%C3%A9-%E2%88%B4-29787b5/?originalSubdomain=br"
+                                    target="_blank" class="card__social-link">
+                                    <i class="ri-linkedin-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                <a href="https://www.instagram.com/murilosodre" target="_blank"
+                                    class="card__social-link">
                                     <i class="ri-instagram-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-twitter-line"></i>
+                                <a href="murilo@itajai.sc.gov.br" target="_blank" class="card__social-link">
+                                    <i class="ri-mail-send-line"></i>
                                 </a>
                             </li>
                         </ul>
@@ -280,18 +366,19 @@
                         <!-- Card social -->
                         <ul class="card__social-list">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-facebook-line"></i>
+                                <a href="https://www.linkedin.com/in/julio-cesar-oliveira-guedes-lopes-silva-3b1330153/?originalSubdomain=br/"
+                                    target="_blank" class="card__social-link">
+                                    <i class="ri-linkedin-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                <a href="https://www.instagram.com/jguedes96" target="_blank" class="card__social-link">
                                     <i class="ri-instagram-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-twitter-line"></i>
+                                <a href="julio.silva@itajai.sc.gov.br" target="_blank" class="card__social-link">
+                                    <i class="ri-mail-send-line"></i>
                                 </a>
                             </li>
                         </ul>
@@ -320,18 +407,18 @@
                         <!-- Card social -->
                         <ul class="card__social-list">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-facebook-line"></i>
+                                <a href="https://www.linkedin.com/in/meioux/" target="_blank" class="card__social-link">
+                                    <i class="ri-linkedin-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                <a href="https://www.instagram.com/meioux" target="_blank" class="card__social-link">
                                     <i class="ri-instagram-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-twitter-line"></i>
+                                <a href="ana.ribeiro@itajai.sc.gov.br" target="_blank" class="card__social-link">
+                                    <i class="ri-mail-send-line"></i>
                                 </a>
                             </li>
                         </ul>
@@ -342,7 +429,7 @@
             <!-- Card 4 -->
             <div class="card">
                 <div class="card__border">
-                    <img src="assets/img/profile-img.png" alt="card image" class="card__img">
+                    <img src="assets/img/giliardi.jpg" alt="card image" class="card__img">
                 </div>
 
                 <h3 class="card__name"> Giliardi Rigotti</h3>
@@ -355,23 +442,25 @@
                             <i class="ri-add-line"></i>
                         </div>
 
-                        <span class="card__social-text">MInhas redes sociais</span>
+                        <span class="card__social-text">"Quero caféééé!"</span>
 
                         <!-- Card social -->
                         <ul class="card__social-list">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-facebook-line"></i>
+                                <a href="https://www.linkedin.com/in/giliardi/" target="_blank"
+                                    class="card__social-link">
+                                    <i class="ri-linkedin-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                <a href="https://www.instagram.com/giliardirigotti" target="_blank"
+                                    class="card__social-link">
                                     <i class="ri-instagram-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-twitter-line"></i>
+                                <a href="giliardi.oliveira@itajai.sc.gov.br" target="_blank" class="card__social-link">
+                                    <i class="ri-mail-send-line"></i>
                                 </a>
                             </li>
                         </ul>
@@ -400,18 +489,20 @@
                         <!-- Card social -->
                         <ul class="card__social-list">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-facebook-line"></i>
+                                <a href="https://www.linkedin.com/in/evandro-campos-4a1b87165/" target="_blank"
+                                    class="card__social-link">
+                                    <i class="ri-linkedin-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                <a href="https://www.instagram.com/evandrocamposcc" target="_blank"
+                                    class="card__social-link">
                                     <i class="ri-instagram-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-twitter-line"></i>
+                                <a href="evandro.campos@itajai.sc.gov.br" target="_blank" class="card__social-link">
+                                    <i class="ri-mail-send-line"></i>
                                 </a>
                             </li>
                         </ul>
@@ -440,8 +531,9 @@
                         <!-- Card social -->
                         <ul class="card__social-list">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-facebook-line"></i>
+                                <a href="https://www.linkedin.com/in/alanirigotti/" target="_blank"
+                                    class="card__social-link">
+                                    <i class="ri-linkedin-line"></i>
                                 </a>
                             </li>
                             <li>
@@ -451,7 +543,7 @@
                             </li>
                             <li>
                                 <a href="https://twitter.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-twitter-line"></i>
+                                    <i class="ri-mail-send-line"></i>
                                 </a>
                             </li>
                         </ul>
@@ -463,7 +555,7 @@
             <!-- Card 7 -->
             <div class="card">
                 <div class="card__border">
-                    <img src="assets/img/godri.png" alt="card image" class="card__img">
+                    <img src="assets/img/godri.jpg" alt="card image" class="card__img">
                 </div>
 
                 <h3 class="card__name">Carlos Godri</h3>
@@ -481,8 +573,9 @@
                         <!-- Card social -->
                         <ul class="card__social-list">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-facebook-line"></i>
+                                <a href="https://www.linkedin.com/in/carlosgodri/" target="_blank"
+                                    class="card__social-link">
+                                    <i class="ri-linkedin-line"></i>
                                 </a>
                             </li>
                             <li>
@@ -492,7 +585,7 @@
                             </li>
                             <li>
                                 <a href="https://twitter.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-twitter-line"></i>
+                                    <i class="ri-mail-send-line"></i>
                                 </a>
                             </li>
                         </ul>
@@ -503,11 +596,11 @@
             <!-- Card 8 -->
             <div class="card">
                 <div class="card__border">
-                    <img src="assets/img/Pedro.png" alt="card image" class="card__img">
+                    <img src="assets/img/pedro.jpg" alt="card image" class="card__img">
                 </div>
 
-                <h3 class="card__name">Simão Pedro</h3>
-                <span class="card__profession">Desenvolvedor Full Stack</span>
+                <h3 class="card__name">Pedro Moura</h3>
+                <span class="card__profession">Devops</span>
 
                 <div class="card__social">
                     <div class="card__social-control">
@@ -516,23 +609,25 @@
                             <i class="ri-add-line"></i>
                         </div>
 
-                        <span class="card__social-text">"Me ache aqui"</span>
+                        <span class="card__social-text">"Me dá o meu copo de café"</span>
 
                         <!-- Card social -->
                         <ul class="card__social-list">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-facebook-line"></i>
+                                <a href="https://www.linkedin.com/in/pedromourabr/" target="_blank"
+                                    class="card__social-link">
+                                    <i class="ri-linkedin-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                <a href="https://www.instagram.com/realpedromoura" target="_blank"
+                                    class="card__social-link">
                                     <i class="ri-instagram-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
-                                    <i class="ri-twitter-line"></i>
+                                <a href="pedromourabr@outlook.com" target="_blank" class="card__social-link">
+                                    <i class="ri-mail-send-line"></i>
                                 </a>
                             </li>
                         </ul>
