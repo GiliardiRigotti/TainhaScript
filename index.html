@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/wave.css">
+    <style>
+        @media only screen and (max-width: 480px) {}
+
+        #header .container {
+            position: absolute;
+            width: 34rem;
+            height: 10rem;
+            left: 40%;
+            margin-top: 5%;
+            top: 0%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text {
+            color: #fff;
+            font-size: 6rem;
+            font-weight: 900;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            animation: text 2s ease-in;
+            margin-right: 0.5rem;
+        }
+
+        .text-g {
+            left: 0;
+            animation-delay: 0ms;
+        }
+
+        .text-T {
+            left: 5rem;
+            animation-delay: 150ms;
+        }
+
+        .text-a {
+            left: 8rem;
+            animation-delay: 230ms;
+        }
+
+        .text-i {
+            left: 12rem;
+            animation-delay: 310ms;
+        }
+
+        .text-n {
+            left: 14rem;
+            animation-delay: 390ms;
+        }
+
+        .text-h {
+            left: 18rem;
+            animation-delay: 470ms;
+        }
+
+        .text-a2 {
+            left: 22rem;
+            animation-delay: 550ms;
+        }
+
+        .text-S {
+            left: 26rem;
+            animation-delay: 630ms;
+        }
+
+        .text-c {
+            left: 30rem;
+            animation-delay: 710ms;
+        }
+
+        .text-r {
+            left: 34rem;
+            animation-delay: 790ms;
+        }
+
+        .text-i2 {
+            left: 37rem;
+            animation-delay: 870ms;
+        }
+
+        .text-p {
+            left: 39rem;
+            animation-delay: 950ms;
+        }
+
+        .text-t {
+            left: 43rem;
+            animation-delay: 1030ms;
+        }
+
+        .text-end {
+            left: 46rem;
+            animation-delay: 1110ms;
+        }
+
+        .coast {
+            position: absolute;
+            left: 1.3rem;
+            bottom: 1.7rem;
+            width: 6.2rem;
+            height: 2.2rem;
+            display: inline-block;
+            transform: translateZ(0);
+        }
+
+        .coast .wave {
+            position: absolute;
+            width: 2.2rem;
+            /* Largura inicial da bolinha */
+            height: 2.2rem;
+            border-radius: 1.1rem;
+            background: radial-gradient(ellipse at center,
+                    rgba(116, 241, 252, 1) 0%,
+                    rgba(50, 230, 255, 1) 73%,
+                    rgba(21, 199, 250, 1) 100%);
+            animation: wave 4s linear forwards;
+            will-change: width;
+        }
+
+        @keyframes wave {
+            0% {
+                transform: scale(0);
+                width: 2.2rem;
+            }
+
+            10% {
+                transform: scale(1);
+            }
+
+            23% {
+                width: 2.2rem;
+            }
+
+            32% {
+                width: 6.1rem;
+            }
+
+            42% {
+                width: 5rem;
+                transform: rotateY(0deg) scale(1, 1);
+            }
+
+            51% {
+                transform: rotateY(90deg) scale(0.6, 0.2);
+            }
+
+            52% {
+                transform: rotateY(90deg) scale(0);
+            }
+
+            100% {
+                transform: rotateY(90deg) scale(0);
+            }
+        }
+
+        @keyframes text {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+
+            30% {
+                transform: translate3d(0, 0, 0);
+            }
+
+            45% {
+                transform: translate3d(0, -4rem, 0);
+            }
+
+            100% {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    </style>
+
+
+    <title>TainhaScript</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="coast">
+                <div class="wave-rel-wrap">
+                    <div class="wave"></div>
+                </div>
+            </div>
+            <div class="coast delay">
+                <div class="wave-rel-wrap">
+                    <div class="wave delay"></div>
+                </div>
+            </div>
+            <div class="text text-g">&gt;</div>
+            <div class="text text-T">T</div>
+            <div class="text text-a">a</div>
+            <div class="text text-i">i</div>
+            <div class="text text-n">n</div>
+            <div class="text text-h">h</div>
+            <div class="text text-a2">a</div>
+            <div class="text text-S">S</div>
+            <div class="text text-c">c</div>
+            <div class="text text-r">r</div>
+            <div class="text text-i2">i</div>
+            <div class="text text-p">p</div>
+            <div class="text text-t">t</div>
+            <div class="text text-end">/&gt;</div>
+        </div>
+    </div>
+    <div style="margin-top: 150px;">
+        <div class="container">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card__border">
+                    <img src="assets/img/Murilo.png" alt="card image" class="card__img">
+                </div>
+
+                <h3 class="card__name">Murilo Sodré</h3>
+                <span class="card__profession">Mestre em políticas públicas Embaixador do Elume Park</span>
+
+                <div class="card__social">
+                    <div class="card__social-control">
+                        <!-- Toggle button -->
+                        <div class="card__social-toggle">
+                            <i class="ri-add-line"></i>
+                        </div>
+
+                        <span class="card__social-text">Confira Minhas redes</span>
+
+                        <!-- Card social -->
+                        <ul class="card__social-list">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-facebook-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card__border">
+                    <img src="assets/img/julio.png" alt="card image" class="card__img">
+                </div>
+
+                <h3 class="card__name">Júlio César Oliveira</h3>
+                <span class="card__profession">Desenvolvedor Mobile (React,React Native)</span>
+
+                <div class="card__social">
+                    <div class="card__social-control">
+                        <!-- Toggle button -->
+                        <div class="card__social-toggle">
+                            <i class="ri-add-line"></i>
+                        </div>
+
+                        <span class="card__social-text">"Café, energético e código" </span>
+
+                        <!-- Card social -->
+                        <ul class="card__social-list">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-facebook-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card__border">
+                    <img src="assets/img/Paula.png" alt="card image" class="card__img">
+                </div>
+
+                <h3 class="card__name">Paula Ribeiro</h3>
+                <span class="card__profession">Desenvolvedora Front End UX/UI Design </span>
+
+                <div class="card__social">
+                    <div class="card__social-control">
+                        <!-- Toggle button -->
+                        <div class="card__social-toggle">
+                            <i class="ri-add-line"></i>
+                        </div>
+
+                        <span class="card__social-text">"Essa sou eu" </span>
+
+                        <!-- Card social -->
+                        <ul class="card__social-list">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-facebook-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="card__border">
+                    <img src="assets/img/profile-img.png" alt="card image" class="card__img">
+                </div>
+
+                <h3 class="card__name"> Giliardi Rigotti</h3>
+                <span class="card__profession">Desenvolvedor Mobile (React Native)</span>
+
+                <div class="card__social">
+                    <div class="card__social-control">
+                        <!-- Toggle button -->
+                        <div class="card__social-toggle">
+                            <i class="ri-add-line"></i>
+                        </div>
+
+                        <span class="card__social-text">MInhas redes sociais</span>
+
+                        <!-- Card social -->
+                        <ul class="card__social-list">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-facebook-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="card__border">
+                    <img src="assets/img/evandro.png" alt="card image" class="card__img">
+                </div>
+
+                <h3 class="card__name">Evandro Campos</h3>
+                <span class="card__profession">Desenvolvedor back-end (PHP, PostgreSQL)</span>
+
+                <div class="card__social">
+                    <div class="card__social-control">
+                        <!-- Toggle button -->
+                        <div class="card__social-toggle">
+                            <i class="ri-add-line"></i>
+                        </div>
+
+                        <span class="card__social-text">"Me encontre aqui"</span>
+
+                        <!-- Card social -->
+                        <ul class="card__social-list">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-facebook-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card">
+                <div class="card__border">
+                    <img src="assets/img/Alani.png" alt="card image" class="card__img">
+                </div>
+
+                <h3 class="card__name">Alani Rigotti</h3>
+                <span class="card__profession">Desenvolvedora Academica de tecnologia na FURB </span>
+
+                <div class="card__social">
+                    <div class="card__social-control">
+                        <!-- Toggle button -->
+                        <div class="card__social-toggle">
+                            <i class="ri-add-line"></i>
+                        </div>
+
+                        <span class="card__social-text">" Aprendiz de Dev."</span>
+
+                        <!-- Card social -->
+                        <ul class="card__social-list">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-facebook-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 7 -->
+            <div class="card">
+                <div class="card__border">
+                    <img src="assets/img/godri.png" alt="card image" class="card__img">
+                </div>
+
+                <h3 class="card__name">Carlos Godri</h3>
+                <span class="card__profession">Desenvolvedor Mobile (React Native)</span>
+
+                <div class="card__social">
+                    <div class="card__social-control">
+                        <!-- Toggle button -->
+                        <div class="card__social-toggle">
+                            <i class="ri-add-line"></i>
+                        </div>
+
+                        <span class="card__social-text">"Capivara é peixe"</span>
+
+                        <!-- Card social -->
+                        <ul class="card__social-list">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-facebook-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="card">
+                <div class="card__border">
+                    <img src="assets/img/Pedro.png" alt="card image" class="card__img">
+                </div>
+
+                <h3 class="card__name">Simão Pedro</h3>
+                <span class="card__profession">Desenvolvedor Full Stack</span>
+
+                <div class="card__social">
+                    <div class="card__social-control">
+                        <!-- Toggle button -->
+                        <div class="card__social-toggle">
+                            <i class="ri-add-line"></i>
+                        </div>
+
+                        <span class="card__social-text">"Me ache aqui"</span>
+
+                        <!-- Card social -->
+                        <ul class="card__social-list">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-facebook-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank" class="card__social-link">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Waves Container-->
+        <footer>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </footer>
+        <!--Waves end-->
+    </div>
+
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
